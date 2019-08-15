@@ -14,7 +14,8 @@ class Student
   end
 
   def self.create_table
-    sql = <<-SQL CREATE TABLE students(
+    sql = <<-SQL 
+      CREATE TABLE students(
       id INTEGER PRIMERY KEY,
       name TEXT,
       grade INTEGER)

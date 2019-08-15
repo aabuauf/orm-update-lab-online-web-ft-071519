@@ -22,4 +22,14 @@ class Student
       SQL
       DB[:conn].execute(sql)
   end
+  
+  def self.create_table
+    sql = <<-SQL 
+      CREATE TABLE students(
+      id INTEGER PRIMERY KEY,
+      name TEXT,
+      grade INTEGER)
+      SQL
+      DB[:conn].execute(sql)
+  end
 end
